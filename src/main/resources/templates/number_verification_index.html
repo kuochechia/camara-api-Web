@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Number Verification</title>
+</head>
+<body>
+    <form action="/verify" method="post">
+        <label for="phoneNumber">Enter a phone number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" pattern="\+?[0-9]*" required>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
